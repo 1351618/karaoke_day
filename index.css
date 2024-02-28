@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.start button {
+  background-color: #6f6d6d;
+  height: 100px;
+  width: 200px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+}
