@@ -1,10 +1,8 @@
-const startVideo = "./video/КОГДА У NPC ПЕРЕРЫВ.mp4";
+const startVideo = "КОГДА У NPC ПЕРЕРЫВ";
 const playListData = {
-  trec_1: "./video/атестат.mp4",
-  trec_2: "./video/запахло весной.mp4",
-  trec_3: "./video/3 сентября.mp4",
-  trec_4:
-    "https://drive.google.com/file/d/1iYbgfLzSIR1-PFahx01a-6Qlvj9GS8CJ/view?usp=drive_link",
+  trec_1: "атестат",
+  trec_2: "запахло весной",
+  trec_3: "3 сентября",
 };
 
 const start = document.getElementById("start");
@@ -23,7 +21,7 @@ function playWind(videoPath) {
   console.log("play");
   div_video.classList.remove("hide");
   const videoPlayer = document.getElementById("video-player");
-  videoPlayer.src = videoPath;
+  videoPlayer.src = `./video/${videoPath}.mp4`;
 
   videoPlayer.addEventListener("ended", () => {
     console.log("Видео закончилось");
