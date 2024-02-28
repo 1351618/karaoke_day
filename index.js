@@ -1,7 +1,8 @@
 const startVideo = "КОГДА У NPC ПЕРЕРЫВ";
 const playListData = {
-  trec_1: "КОГДА У NPC ПЕРЕРЫВ",
-  trec_2: "КОГДА ДУМАЕШЬ ЧТО ТВОЙ АЙТИШНИК ТЕЛЕПАТ (1)",
+  trec_1: "атестат",
+  trec_2: "запахло весной",
+  trec_3: "3 сентября",
 };
 
 const start = document.getElementById("start");
