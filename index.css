@@ -22,3 +22,17 @@ body {
   font-weight: 900;
   color: #fff;
 }
+
+.div-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-video iframe {
+  height: 80%;
+  width: 80%;
+}
