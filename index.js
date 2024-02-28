@@ -1,7 +1,7 @@
-const startVideo = "КОГДА У NPC ПЕРЕРЫВ";
+const startVideo = "Заставка";
 const playListData = {
-  trec_1: "атестат",
-  trec_2: "запахло весной",
+  trec_1: "Аттестат",
+  trec_2: "Запахло весной",
   trec_3: "3 сентября",
 };
 
