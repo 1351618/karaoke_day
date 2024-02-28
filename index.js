@@ -3,6 +3,12 @@ const playListData = {
   trec_1: "Аттестат",
   trec_2: "Запахло весной",
   trec_3: "3 сентября",
+  trec_4: "дым сигарет с ментолом",
+  trec_5: "максим знаеш ли ты",
+  trec_6: "Седая ночь",
+  trec_7: "modern talking sheri sheri",
+  trec_8: "sweet dreams",
+  trec_9: "What is Love haddeaway rus",
 };
 
 const start = document.getElementById("start");
