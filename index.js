@@ -12,10 +12,12 @@ const playListData = {
 };
 
 const start = document.getElementById("start");
+const stop = document.getElementById("stop");
 const div_start = document.querySelector(".start");
 const div_winPlayList = document.querySelector(".win-playlist");
 const div_video = document.querySelector(".div-video");
 const div_playlist = document.querySelector(".playlist");
+const videoPlayer = document.getElementById("video-player");
 
 start.addEventListener("click", () => {
   console.log("start");
@@ -26,7 +28,7 @@ start.addEventListener("click", () => {
 function playWind(videoPath) {
   console.log("play");
   div_video.classList.remove("hide");
-  const videoPlayer = document.getElementById("video-player");
+  // const videoPlayer = document.getElementById("video-player");
   videoPlayer.src = `./video/${videoPath}.mp4`;
 
   videoPlayer.addEventListener("ended", () => {
@@ -50,3 +52,11 @@ for (let key in playListData) {
   });
   div_playlist.appendChild(trecTitlt);
 }
+
+stop.addEventListener("click", () => {
+  console.log("stop");
+  videoPlayer.pause();
+  div_video.classList.add("hide");
+  div_start.classList.add("hide");
+  div_winPlayList.classList.remove("hide");
+});
