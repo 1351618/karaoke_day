@@ -9,6 +9,7 @@ const playListData = {
   trec_7: "modern talking sheri sheri",
   trec_8: "sweet dreams",
   trec_9: "What is Love haddeaway rus",
+  trec_10: "Попурри 18+",
 };
 
 const start = document.getElementById("start");
