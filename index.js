@@ -20,19 +20,18 @@ const div_playlist = document.querySelector(".playlist");
 const videoPlayer = document.getElementById("video-player");
 
 start.addEventListener("click", () => {
-  console.log("start");
+  // console.log("start");
   const videoPath = startVideo;
   playWind(videoPath);
 });
 
 function playWind(videoPath) {
-  console.log("play");
+  // console.log("play");
   div_video.classList.remove("hide");
-  // const videoPlayer = document.getElementById("video-player");
   videoPlayer.src = `./video/${videoPath}.mp4`;
 
   videoPlayer.addEventListener("ended", () => {
-    console.log("Видео закончилось");
+    // console.log("Видео закончилось");
     div_video.classList.add("hide");
     div_start.classList.add("hide");
     div_winPlayList.classList.remove("hide");
@@ -43,18 +42,18 @@ function playWind(videoPath) {
 
 // добавляем на страницу
 for (let key in playListData) {
-  console.log(key);
+  // console.log(key);
   let trecTitlt = document.createElement("p");
   trecTitlt.textContent = `- ${playListData[key]}`;
   trecTitlt.addEventListener("click", () => {
-    console.log(playListData[key]);
+    // console.log(playListData[key]);
     playWind(playListData[key]);
   });
   div_playlist.appendChild(trecTitlt);
 }
 
 stop.addEventListener("click", () => {
-  console.log("stop");
+  // console.log("stop");
   videoPlayer.pause();
   div_video.classList.add("hide");
   div_start.classList.add("hide");
