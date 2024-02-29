@@ -64,7 +64,7 @@ body {
   max-height: 90%;
   overflow: auto;
   padding: 0 0 0 50px;
-  width: 35%;
+  width: 50%;
   z-index: 10;
 }
 
@@ -87,9 +87,11 @@ body {
 
 .playlist p {
   color: #820505;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 900;
   cursor: pointer;
+  background-color: #e0c1bac7;
+  border-radius: 20px;
 }
 
 .div-video {

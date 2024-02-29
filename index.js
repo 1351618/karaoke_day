@@ -45,7 +45,7 @@ function playWind(videoPath) {
 for (let key in playListData) {
   console.log(key);
   let trecTitlt = document.createElement("p");
-  trecTitlt.textContent = playListData[key];
+  trecTitlt.textContent = `- ${playListData[key]}`;
   trecTitlt.addEventListener("click", () => {
     console.log(playListData[key]);
     playWind(playListData[key]);
